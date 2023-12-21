@@ -4,59 +4,137 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="../dist/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li>logo</li>
-                <li><a href="home.html">HOME</a></li>
-                <li><a href="about.html">ABOUT</a></li>
-                <li><a href="skill.html">SKILL</a></li>
-                <li><a href="projects.html">PROJECTS</a></li>
-                <li><a href="contact.html">CONTACT</a></li>
+<body class="h-screen bg-gradient-to-r from-blue-900 via-blue-800 to-blue-700 ... ">
+    <div id="old" class="flex justify-between bg-blue-600">
+        <div class="m-1">
+            <img class="w-10 h-10 rounded-full" src="https://th.bing.com/th/id/OIP.cF-R8IXSTnyXbbemr5Kd3gAAAA?w=360&h=360&rs=1&pid=ImgDetMain" alt="LOGO">
+        </div>
+        <button id="button" class="sm:hidden mr-4">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <div  class="m-1 hidden sm:block ">
+            <ul  class="m-2 w-96 flex justify-between gap-2 cursor-pointer">
+                <li class="hover:bg-blue-200 hover:text-black border-l border-r border-black text-white pl-2 pr-2"><a href="home.html">Home</a></li>
+                <li class="hover:bg-blue-200 hover:text-black border-l border-r border-black text-white pl-2 pr-2"><a href="about.html">About</a></li>
+                <li class="hover:bg-blue-200 hover:text-black border-l border-r border-black text-white pl-2 pr-2"><a href="skill.html">Skill</a></li>
+                <li class="hover:bg-blue-200 hover:text-black border-l border-r border-black text-white pl-2 pr-2"><a href="projects.html">Projects</a></li>
+                <li class="hover:bg-blue-200 hover:text-black border-l border-r border-black text-white pl-2 pr-2"><a href="contact.html">Contact</a></li>
             </ul>
-        </nav>
-    </header>
-    <main>
-        <section>
-            <h1>Techinical skills</h1>
-            <div>
-                <h1>programming</h1>
-                <img src="./image/programming1 (1).jpg" alt="cofding">
-                <p>Proficient in both Python and Java, adeptly utilizing their syntax and functionalities to develop diverse software solutions.Skilled in Python and Java programming languages, capable of creating efficient, scalable applications and addressing complex coding challenges.Demonstrating expertise in Python and Java, leveraging their versatility to craft robust, functional programs tailored to specific project needs</p>
+        </div>
+    </div> 
+
+    <div id="active" class=" hidden sm:hidden flex flex-col justify-between  bg-blue-400">
+        <div class="bg-blue-600 p-1">
+            <img class="w-10 h-10 rounded-full" src="https://th.bing.com/th/id/OIP.cF-R8IXSTnyXbbemr5Kd3gAAAA?w=360&h=360&rs=1&pid=ImgDetMain" alt="LOGO">
+        </div>
+        <div class=" m-1  bg-blue-400">
+            <ul  class="self-center m-2  flex flex-col  gap-2 cursor-pointer">
+                <li class=" hover:text-black mx-36  text-center text-white pl-2 pr-2"><a  href="home.html">Home</a></li>
+                <li class=" hover:text-black mx-36 text-center text-white pl-2 pr-2"><a href="about.html">About</a></li>
+                <li class=" hover:text-black mx-36 text-center text-white pl-2 pr-2"><a href="skill.html">Skill</a></li>
+                <li class=" hover:text-black mx-36 text-center text-white pl-2 pr-2"><a href="projects.html">Projects</a></li>
+                <li class=" hover:text-black mx-36 text-center text-white pl-2 pr-2"><a href="contact.html">Contact</a></li>
+      
+            </ul>
+        </div>
+    </div>
+
+
+    <main class=" flex flex-col sm:flex-col md:flex-row gap-10 mt-5 text-white ">
+        <div>
+            <div class="lg:text-6xl md:text-4xl text-4xl  pl-10 my-2">
+                <h1 >Techinical skills</h1>
+            </div>
+            <div class="flex flex-col sm:flex-row md:flex-col">
+                <div class="sm:w-1/2 sm:flex sm:flex-wrap  md:w-full md:block sm:self-start" >
+                    <div class="sm:w-full   md:w-full lg:text-4xl md:text-2xl sm:text-2xl text-3xl pl-2 my-2 sm:m-0"> 
+                        <h1>Programming</h1>
+                    </div>
+                    <div class="sm:w-2/5  md:w-full self-center my-2 sm:m-0"> 
+                        <img class="md:w-96 md:h-44" src="../image/programming1 (1).jpg" alt="net">
+                    </div>
+                    <div class="sm:w-3/5 lg:text-lg sm:text-xs sm:m-0  md:w-full md:text-base lg:text-lg small pl-2 my-2">
+                        <p >
+                            Proficient in both Python and Java, adeptly utilizing their syntax and functionalities to develop diverse software solutions.Skilled in Python and Java programming languages, capable of creating efficient, scalable applications and addressing complex coding challenges.Demonstrating expertise in Python and Java, leveraging their versatility to craft robust, functional programs tailored to specific project needs
+                        </p>
+                    </div>
+                </div>
+
+
+
+                <div class="sm:w-1/2 sm:flex sm:flex-wrap  md:w-full md:block" >
+                    <div class="sm:w-full   md:w-full lg:text-4xl md:text-2xl sm:text-2xl text-3xl pl-2 my-2 sm:m-0"> 
+                        <h1 >Networking</h1>
+                    </div>
+                    <div class="sm:w-2/5  md:w-full self-center my-2 sm:m-0"> 
+                        <img class="md:w-96 md:h-44" src="../image/networking.jpg" alt="net">
+                    </div>
+                    <div class="sm:w-3/5 lg:text-lg sm:text-xs sm:m-0  md:w-full md:text-base lg:text-lg small pl-2 my-2">
+                         <p >
+                            I am currently exploring networking fundamentals at a beginner level, delving into concepts such as network protocols, the OSI model, and basic network configurations. As I progress in my understanding of TCP/IP, subnetting, and IP addressing, I am gaining the foundational knowledge necessary to configure and troubleshoot simple network setups. Through hands-on practice and learning, I aim to develop a solid grasp of networking principles, paving the way to contribute effectively to network design, maintenance, and troubleshooting in the near future
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="lg:mr-5">
+            <div class="lg:text-6xl md:text-4xl text-4xl pl-10 my-2">
+                <h1>Soft skills</h1>
+            </div>
+            <div class="flex flex-col sm:flex-row md:flex-col">
+                
+                <div class="sm:w-1/2 sm:flex sm:flex-wrap  md:w-full md:block">
+                    <div class="sm:w-full   md:w-full lg:text-4xl md:text-2xl sm:text-2xl text-3xl pl-2 my-2 sm:m-0">
+                        <h1>
+                            Communication
+                        </h1>
+                    </div>
+                    <div class=" sm:w-2/5  md:w-full  self-center my-2 sm:m-0">
+                        <img class="md:w-96 md:h-44"  src="../image/communication.jpg" alt="communication">
+                    </div>
+                    <div class="sm:w-3/5 lg:text-lg sm:text-xs sm:m-0  md:w-full md:text-base lg:text-lg small pl-2 my-2">
+                        <p >
+                             I possess the capability to effectively convey complex technical concepts in a clear and understandable manner to both technical and non-technical stakeholders. My proficiency in articulating ideas, whether in written reports, documentation, or verbal presentations, enables seamless collaboration within multidisciplinary teams. Additionally, I actively engage in active listening, fostering an environment conducive to constructive feedback and efficient problem-solving. These communication skills allow me to bridge the gap between technical aspects and the broader goals of projects, ensuring clarity and alignment among team members and stakeholders
+                        </p>
+                    </div>
+                </div>
+
+                <div class="sm:w-1/2 sm:flex sm:flex-wrap  md:w-full md:block sm:self-start">
+                    <div class="sm:w-full   md:w-full lg:text-4xl md:text-2xl sm:text-2xl text-3xl pl-2 my-2 sm:m-0">
+                        <h1>
+                            Time management
+                        </h1>
+                    </div>
+                    <div class=" sm:w-2/5  md:w-full self-center my-2 sm:m-0"> 
+                        <img  class="md:w-96 md:h-44" src="../image/time management.jpg" alt="time">
+                    </div>
+                    <div class="sm:w-3/5 lg:text-lg sm:text-xs sm:m-0  md:w-full md:text-base lg:text-lg small pl-2 my-2">
+                        <p>
+                            My adeptness in time management is a cornerstone of my work ethic. I excel in prioritizing tasks, setting achievable goals, and efficiently allocating resources to meet deadlines effectively. By employing various organizational tools and techniques, I optimize productivity without compromising quality. I possess the ability to adapt to changing priorities, ensuring smooth project progression even under challenging timelines. Through meticulous planning and a proactive approach, I consistently deliver results within stipulated timeframes. 
+                     </p>
+                </div>
             </div>
 
-            <div>
-                <h1>Networking</h1>
-                <img src="./image/networking.jpg" alt="net">
-                <p>I am currently exploring networking fundamentals at a beginner level, delving into concepts such as network protocols, the OSI model, and basic network configurations. As I progress in my understanding of TCP/IP, subnetting, and IP addressing, I am gaining the foundational knowledge necessary to configure and troubleshoot simple network setups. Through hands-on practice and learning, I aim to develop a solid grasp of networking principles, paving the way to contribute effectively to network design, maintenance, and troubleshooting in the near future</p>
             </div>
-        </section>
-
-        <section>
-            <h1>Soft skills</h1>
-            <div>
-                <h1>Communication</h1>
-                <img src="./image/communication.jpg" alt="communication">
-                <p> I possess the capability to effectively convey complex technical concepts in a clear and understandable manner to both technical and non-technical stakeholders. My proficiency in articulating ideas, whether in written reports, documentation, or verbal presentations, enables seamless collaboration within multidisciplinary teams. Additionally, I actively engage in active listening, fostering an environment conducive to constructive feedback and efficient problem-solving. These communication skills allow me to bridge the gap between technical aspects and the broader goals of projects, ensuring clarity and alignment among team members and stakeholders</p>
-            </div>
-            <div>
-                <h1>Time management</h1>
-                <img src="./image/time management.jpg" alt="time">
-                <p>My adeptness in time management is a cornerstone of my work ethic. I excel in prioritizing tasks, setting achievable goals, and efficiently allocating resources to meet deadlines effectively. By employing various organizational tools and techniques, I optimize productivity without compromising quality. I possess the ability to adapt to changing priorities, ensuring smooth project progression even under challenging timelines. Through meticulous planning and a proactive approach, I consistently deliver results within stipulated timeframes. </p>
-            </div>
-        </section>
+        </div>
     </main>
-    <footer>
-        <a href=""><i class="fa-brands fa-facebook"></i></a>
-        <a href=""><i class="fa-brands fa-instagram"></i></a>
-        <a href=""><i class="fa-brands fa-telegram"></i></a>
-        <a href=""><i class="fa-brands fa-twitter"></i></a>
-        <a href="">&#128231;</a>
-        <p>Copyright &copy; reserved </p>
+
+
+    <footer class="mt-auto text-white bg-black flex flex-col">
+        <div class="flex justify-around mt-1">
+            <a class="has-text-light px-5  hover:text-blue-600" href=""><i class="fa-brands fa-facebook"></i></a>
+            <a class="has-text-light px-5 hover:text-blue-600" href=""><i class="fa-brands fa-instagram"></i></a>
+            <a class="has-text-light px-5 hover:text-blue-600" href=""><i class="fa-brands fa-telegram"></i></a>
+            <a class="has-text-light px-5 hover:text-blue-600" href=""><i class="fa-brands fa-twitter"></i></a>
+            <a class="has-text-light px-5 hover:text-blue-600" href=""><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+        <p class="text-center pt-1  mb-1">Copyright &copy; reserved </p>
     </footer>
-    
+    <script src="../js/humberger.js"></script>
 </body>
 </html>

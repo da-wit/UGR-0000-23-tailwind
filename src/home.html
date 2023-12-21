@@ -4,34 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="../dist/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
-<body >
-    <header>
-        <nav>
-            <ul>
-                <li>logo</li>
-                <li><a href="home.html">HOME</a></li>
-                <li><a href="about.html">ABOUT</a></li>
-                <li><a href="skill.html">SKILL</a></li>
-                <li><a href="projects.html">PROJECTS</a></li>
-                <li><a href="contact.html">CONTACT</a></li>
+<body class="h-screen bg-[url('../image/3235319.jpg')] flex flex-col">
+    <div id="old" class="flex justify-between bg-blue-600">
+        <div class="m-1">
+            <img class="w-10 h-10 rounded-full" src="https://th.bing.com/th/id/OIP.cF-R8IXSTnyXbbemr5Kd3gAAAA?w=360&h=360&rs=1&pid=ImgDetMain" alt="LOGO">
+        </div>
+        <button id="button" class="sm:hidden mr-4">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <div  class="m-1 hidden sm:block ">
+            <ul  class="m-2 w-96 flex justify-between gap-2 cursor-pointer">
+                <li class="hover:bg-blue-200 hover:text-black border-l border-r border-black text-white pl-2 pr-2"><a href="home.html">Home</a></li>
+                <li class="hover:bg-blue-200 hover:text-black border-l border-r border-black text-white pl-2 pr-2"><a href="about.html">About</a></li>
+                <li class="hover:bg-blue-200 hover:text-black border-l border-r border-black text-white pl-2 pr-2"><a href="skill.html">Skill</a></li>
+                <li class="hover:bg-blue-200 hover:text-black border-l border-r border-black text-white pl-2 pr-2"><a href="projects.html">Projects</a></li>
+                <li class="hover:bg-blue-200 hover:text-black border-l border-r border-black text-white pl-2 pr-2"><a href="contact.html">Contact</a></li>
             </ul>
-        </nav>
-    </header>
-    <main>
-        <section>
-            <h1>Hi,I`m Dawit Belay</h1>
-            <p>A 3rd year Software engineering student</p>
-        </section>
+        </div>
+    </div> 
+
+    <div id="active" class=" hidden sm:hidden flex flex-col justify-between  bg-blue-400">
+        <div class="bg-blue-600 p-1">
+            <img class="w-10 h-10 rounded-full" src="https://th.bing.com/th/id/OIP.cF-R8IXSTnyXbbemr5Kd3gAAAA?w=360&h=360&rs=1&pid=ImgDetMain" alt="LOGO">
+        </div>
+        <div class=" m-1  bg-blue-400">
+            <ul  class="self-center m-2  flex flex-col  gap-2 cursor-pointer">
+                <li class=" hover:text-black mx-36  text-center text-white pl-2 pr-2"><a  href="home.html">Home</a></li>
+                <li class=" hover:text-black mx-36 text-center text-white pl-2 pr-2"><a href="about.html">About</a></li>
+                <li class=" hover:text-black mx-36 text-center text-white pl-2 pr-2"><a href="skill.html">Skill</a></li>
+                <li class=" hover:text-black mx-36 text-center text-white pl-2 pr-2"><a href="projects.html">Projects</a></li>
+                <li class=" hover:text-black mx-36 text-center text-white pl-2 pr-2"><a href="contact.html">Contact</a></li>
+      
+            </ul>
+        </div>
+    </div>
+
+    <main class=" flex flex-col justify-around h-screen">
+        <div class="flex flex-col gap-3 sm:gap-5">
+            <h1 class="text-4xl lg:text-6xl md:text-5xl text-center text-white">Hi,I`m Dawit Belay</h1>
+            <p class=" text-xl lg:lg:text-3xl md:text-xl text-center text-white">A 3rd year Software engineering student</p>
+        </div>
     </main>
-    <footer>
-        <a href=""><i class="fa-brands fa-facebook"></i></a>
-        <a href=""><i class="fa-brands fa-instagram"></i></a>
-        <a href=""><i class="fa-brands fa-telegram"></i></a>
-        <a href=""><i class="fa-brands fa-twitter"></i></a>
-        <a href="">&#128231;</a>
-        <p>Copyright &copy; reserved </p>
+
+    <footer class="mt-auto text-white bg-black flex flex-col">
+        <div class="flex justify-around mt-1">
+            <a class="has-text-light px-5  hover:text-blue-600" href=""><i class="fa-brands fa-facebook"></i></a>
+            <a class="has-text-light px-5 hover:text-blue-600" href=""><i class="fa-brands fa-instagram"></i></a>
+            <a class="has-text-light px-5 hover:text-blue-600" href=""><i class="fa-brands fa-telegram"></i></a>
+            <a class="has-text-light px-5 hover:text-blue-600" href=""><i class="fa-brands fa-twitter"></i></a>
+            <a class="has-text-light px-5 hover:text-blue-600" href=""><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+        <p class="text-center pt-1  mb-1">Copyright &copy; reserved </p>
     </footer>
+    <script src="../js/humberger.js"></script>
 </body>
 </html>
